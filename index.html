@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DriveSafe - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="DriveSafe homepage">DriveSafe</a>
+      <nav class="nav" role="navigation" aria-label="Primary Navigation">
+        <button id="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="primary-menu" class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>DriveSafe: Your Road Safety Partner</h1>
+        <p>Learn essential traffic safety rules to protect yourself and others.</p>
+        <a href="#rules" class="btn-primary">Explore Rules</a>
+      </div>
+    </section>
+
+    <section id="rules" class="rules-section container">
+      <h2>Traffic Safety Rules</h2>
+      <div class="rules-grid">
+        <!-- Rule cards -->
+        <article class="rule-card" tabindex="0" aria-describedby="rule1-desc">
+          <h3>Speed Limits</h3>
+          <p id="rule1-desc" class="rule-desc">Observe speed limits to reduce accidents.</p>
+          <button class="btn-secondary rule-details-btn" data-rule="speed-limits">Details</button>
+        </article>
+        <article class="rule-card" tabindex="0" aria-describedby="rule2-desc">
+          <h3>Seat Belts</h3>
+          <p id="rule2-desc" class="rule-desc">Always wear your seat belt while driving.</p>
+          <button class="btn-secondary rule-details-btn" data-rule="seat-belts">Details</button>
+        </article>
+        <article class="rule-card" tabindex="0" aria-describedby="rule3-desc">
+          <h3>No Distracted Driving</h3>
+          <p id="rule3-desc" class="rule-desc">Avoid using phones or distractions while driving.</p>
+          <button class="btn-secondary rule-details-btn" data-rule="no-distracted-driving">Details</button>
+        </article>
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
+
+    <section class="carousel-section">
+      <div class="container">
+        <h2>Safe Driving Tips</h2>
+        <div class="carousel" aria-label="Safe driving tips carousel" tabindex="0">
+          <div class="carousel-track">
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 1">
+              <img src="assets/images/seatbelt.jpg" alt="Person wearing a seatbelt" />
+              <p>Always buckle up before driving.</p>
+            </div>
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 2">
+              <img src="assets/images/speed-limit.jpg" alt="Speed limit sign" />
+              <p>Follow speed limits carefully.</p>
+            </div>
+            <div class="carousel-slide" role="group" aria-roledescription="slide" aria-label="Slide 3">
+              <img src="assets/images/no-phone.jpg" alt="No phone usage while driving" />
+              <p>Don't use your phone behind the wheel.</p>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Previous slide">‹</button>
+          <button class="carousel-btn next" aria-label="Next slide">›</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; 2025 DriveSafe. All rights reserved.</div>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-content" tabindex="0">
+      <button id="modal-close" aria-label="Close details modal">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
